@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Progressive Development</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="post" class="sticky-menu">
+                <div class="inner clearfix">
+                    <div class="document prose">
+                        <div class="surface preview">
+                            <div class="content-preview-wrapper">
+                                <div class="content-preview">
+                                    <div class="post-content" style="white-space: normal;">
+                                        <p><span class="bigTitle">Progessive Development</span></p>
+                                        <h2 >If you are a new programmer, you've come to the right place!<span class="right"><img style="width: 439px" src="/img/web-design.png" alt="programmer"></span></h2>
+                                        <h3 id="-so-easy-your-human-companion-could-do-it-too-"><em>Anything useful you can find here</em></h3>
+                                        <p>JavaScript is a programming language or, in other words, a means by which a computer is instructed to do things. Just the same as one controls humans with hisses and meows, one controls computers with statements written in a programming language. All web browsers understand JavaScript and you can take advantage of that to make web pages do crazy things!</p>
+                                        <p>JavaScript started as a way to make web pages more interactive. Nowadays JavaScript runs in more places than just web browsers — it runs on web servers, phones and even robots! This page will teach you some JavaScript basics so that you can get up and running in no time*.</p>
+                                        <p>* <em>Actual time: more than none. Probably an hour or two. Also since you are a cat you are less likely to run and more likely to lay around in the sun</em></p>
+                                        <h2 id="table-of-contents">Table of contents</h2>
+                                        <ul>
+                                            <li><a href="#basics">The console</a></li>
+                                            <li><a href="#strings">Strings</a></li>
+                                            <li><a href="#values">Values and variables</a></li>
+                                            <li><a href="#functions">Using functions</a></li>
+                                            <li><a href="#standard-library">Built in JS functions</a></li>
+                                            <li><a href="#third-party-javascript">Download new JS functions</a></li>
+                                            <li><a href="#writing-functions">Writing new functions</a></li>
+                                            <li><a href="#loops">Loops</a></li>
+                                            <li><a href="#arrays">Arrays</a></li>
+                                            <li><a href="#objects">Objects</a></li>
+                                            <li><a href="#callbacks">Callbacks</a></li>
+                                            <li><a href="#recommended-reading">Recommended reading</a></li>
+                                        </ul>
+                                        <h2 id="don-t-be-a-scaredy-cat">Don't be a scaredy-cat</h2>
+                                        <p><span class="right"><img src="images/yarnify.png" alt="cat"></span></p>
+                                        <p>You will always land on your feet — even when programming! Unlike <a href="images/dealwithit.gif">pawing over a glass of water</a> on your laptop, <em>nothing</em> in these tutorials will damage your computer in any way, even if you mistype a command or click the wrong button. Like cats, computer programmers make mistakes all time: misspelling things, forgetting quotes or brackets, and being forgetful of how basic functions (and yarn, lasers) work. Programmers care more about making it work <em>eventually</em> rather than trying to make it work the very first time. The best way to learn is by making mistakes!</p>
+                                        <p>So don't be a scaredy-cat! The absolute worst thing that will happen is that you might have to refresh this page in your web browser if you get stuck. Don't worry though, this will happen very rarely.</p>
+                                        <h2 id="-a-id-basics-href-basics-a-the-basics"><a id="basics" href="#basics">#</a> The basics</h2>
+                                        <p>There is JavaScript running on this page right now. Let's play around with it a little. For the sake of simplicity I'll assume you are using Google Chrome to read this page (if you aren't it's probably easier on both of us if you follow along with Chrome).</p>
+                                        <p>First, right click anywhere on the screen and hit <strong>Inspect Element</strong>, then click on the <strong>Console</strong> tab. You should see a thingy that looks like this:</p>
+                                        <p><img src="images/console.gif" alt="console"></p>
+                                        <p>This is a console, otherwise known as a "command line" or "terminal". Basically it's a way to type one thing at a time into a computer and immediately get the computers answer back. They are super useful as a learning tool (I still use the console nearly every day that I'm coding).</p>
+                                        <p>The console does some pretty cool stuff. Here I have started to type something and the console is helping me out by giving me a list of all the possible things I could continue to type! Another thing you could do is type <code>1 + 1</code> into the console and then hit the <code>Enter</code> key and watch what happens.</p>
+                                        <p>Using the console is a very important part of learning JavaScript. If you don't know if something works or what the command is for something, go to the console and figure it out! Here's an example:</p>
+                                        <p>Here is a pseudocode implementation of what <code>a</code> might look like:</p>
+                                        <pre><code class="lang-js">function a(done) {
+  download('https://pbs.twimg.com/media/B4DDWBrCEAA8u4O.jpg:large', function doneDownloading(error, png) {
+    // handle error if there was one
+    if (err) console.log('uh-oh!', error)
+
+    // call done when you are all done
+    done()
+  })
+}
+</code></pre>
+                                        
+                                        <p><em>JSForCats.com is a labor of love and work in progress by <a href="http://twitter.com/maxogden">@maxogden</a>. If you would like to contribute and make this tutorial better there is a Github repo <a href="http://github.com/maxogden/javascript-for-cats">right over here</a>.</em></p>
+                                        <center><img src="images/awesome.jpg" alt="console"></center>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- <section>
+        <div class="container">
+            <div class="blog-title text-center">
+                <h1>What in the ^%#@ are you thinking?</h1>
+            </div>
+            <p>You might be reading this based on the title of the post? That's okay, I dont blame you. It's pretty catchy to be honest, along with what i'm about to try and explain as direct as possible. CODING IS NOT FOR THE TIMMIED. I repeat. Coding is not for the fuckin TIMMIED!</p>
+            <p>You probably thinking you going to just sit in front of a computer and make million.... (reality kicks in right now). NO no no no... what you setting yourself up is for a disaster. Okay, now that I got that out of the way and your still here, you came to the right place. Lets begin. </p>
+        </div>
+    </section>
+</body> -->
+
+</html>
