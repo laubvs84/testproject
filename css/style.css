@@ -1,12 +1,84 @@
-/*
-Theme Name: Four Eight
-Description: Custom built theme to showcase work.
-Version: 1.0
-Author: HBK - (ReEdit: CR)
-Tags: white, one-column, two-columns, three-columns,four-columns, right-sidebar, responsive-layout, custom-colors, custom-menu, featured-images, theme-options, translation-ready, photoblogging
-License: GNU General Public License version 1.0
-Text Domain: four eight
-*/
 /* --------------------------
 [Master Stylesheet]
 -------------------------- */
+@import url('/css/bootstrap.css');
+@import url('/css/bootstrap.css.map');
+@import url('/css/bootstrap.min.css');
+@import url('/css/bootstrap.min.css.map');
+@import url('/css/bootstrap-grid.css');
+@import url('/css/bootstrap-grid.css.map');
+@import url('/css/bootstrap-grid.min.css');
+@import url('/css/bootstrap-grid.min.css.map');
+@import url('/css/bootstrap-reboot.css');
+@import url('/css/bootstrap-reboot.css.map');
+@import url('/css/bootstrap-reboot.min.css');
+@import url('/css/bootstrap-reboot.min.css.map');
+/* --------------------------
+:: 1.0 Base CSS Start
+-------------------------- */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+background-color: #fff;
+overflow-x: hidden;
+color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 200;
+color: #000000;
+}
+
+ul,
+ol {
+margin: 0;
+padding: 0;
+}
+
+,
+a:hover,
+a:focus,
+a:active {
+text-decoration: none;
+-webkit-transition-duration: 500ms;
+transition-duration: 500ms;
+}
+
+li {
+list-style: none;
+}
+
+p {
+font-family: 'Open Sans', sans-serif;
+color: #80ba25;
+font-size: 16px;
+font-weight: 400;
+margin-top: 0;
+}
+
+.blog-title {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+.blog-title h1 {
+    font-weight: bold;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
