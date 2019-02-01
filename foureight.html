@@ -3,6 +3,8 @@
 
 <head>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@16/umd/react.production.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.js" crossorigin></script>
     <meta charset="utf-8" />
     <title>Progressive Development</title>
 </head>
@@ -18,7 +20,7 @@
                                 <div class="content-preview">
                                     <div class="post-content" style="white-space: normal;">
                                         <p><span class="bigTitle">Progessive Development</span></p>
-                                        <h2 >If you are a new programmer, you've come to the right place!<span class="right"><img style="width: 439px" src="/img/web-design.png" alt="programmer"></span></h2>
+                                        <h2>If you are a new programmer, you've come to the right place!<span class="right"><img style="width: 439px" src="/img/web-design.png" alt="programmer"></span></h2>
                                         <h3 id="-so-easy-your-human-companion-could-do-it-too-"><em>Anything useful you can find here</em></h3>
                                         <p>JavaScript is a programming language or, in other words, a means by which a computer is instructed to do things. Just the same as one controls humans with hisses and meows, one controls computers with statements written in a programming language. All web browsers understand JavaScript and you can take advantage of that to make web pages do crazy things!</p>
                                         <p>JavaScript started as a way to make web pages more interactive. Nowadays JavaScript runs in more places than just web browsers — it runs on web servers, phones and even robots! This page will teach you some JavaScript basics so that you can get up and running in no time*.</p>
@@ -51,19 +53,20 @@
                                         <p>Using the console is a very important part of learning JavaScript. If you don't know if something works or what the command is for something, go to the console and figure it out! Here's an example:</p>
                                         <p>Here is a pseudocode implementation of what <code>a</code> might look like:</p>
                                         <pre><code class="lang-js">function a(done) {
-  download('https://pbs.twimg.com/media/B4DDWBrCEAA8u4O.jpg:large', function doneDownloading(error, png) {
-    // handle error if there was one
-    if (err) console.log('uh-oh!', error)
+                                        download('https://pbs.twimg.com/media/B4DDWBrCEAA8u4O.jpg:large', function doneDownloading(error, png) {
+                                        // handle error if there was one
+                                        if (err) console.log('uh-oh!', error)
 
-    // call done when you are all done
-    done()
-  })
-}
-</code></pre>
-                                        
+                                        // call done when you are all done
+                                        done()
+                                        })
+                                        }
+                                        </code></pre>
                                         <p><em>JSForCats.com is a labor of love and work in progress by <a href="http://twitter.com/maxogden">@maxogden</a>. If you would like to contribute and make this tutorial better there is a Github repo <a href="http://github.com/maxogden/javascript-for-cats">right over here</a>.</em></p>
-                                        <center><img src="images/awesome.jpg" alt="console"></center>
 
+                                        <center>
+                                            <div id="like_button_container"></div>
+                                        </center>
                                     </div>
                                 </div>
                             </div>
@@ -73,15 +76,11 @@
             </div>
         </div>
     </div>
-   <!-- <section>
-        <div class="container">
-            <div class="blog-title text-center">
-                <h1>What in the ^%#@ are you thinking?</h1>
-            </div>
-            <p>You might be reading this based on the title of the post? That's okay, I dont blame you. It's pretty catchy to be honest, along with what i'm about to try and explain as direct as possible. CODING IS NOT FOR THE TIMMIED. I repeat. Coding is not for the fuckin TIMMIED!</p>
-            <p>You probably thinking you going to just sit in front of a computer and make million.... (reality kicks in right now). NO no no no... what you setting yourself up is for a disaster. Okay, now that I got that out of the way and your still here, you came to the right place. Lets begin. </p>
-        </div>
-    </section>
-</body> -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <script src="like_button.js"></script>
+</body>
 
 </html>
